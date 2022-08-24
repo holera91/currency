@@ -5,10 +5,13 @@
 //отримуємо курси від Монобанк
 const axios = require('axios').default;
 const monoUrl = 'https://api.monobank.ua/bank/currency';
+const privatUrl = 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5'
 const curCur = (response) => {
-const {data} = response;
-   };
-axios.get(monoUrl).then(curCur);
+    const {data} = response;
+
+    console.log(data);
+    };
+    axios.get(privatUrl).then(curCur);
 
 
     
