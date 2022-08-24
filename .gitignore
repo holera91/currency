@@ -9,3 +9,4 @@
 **/platformio.ini
 /secrets.yaml
 /node_modules
+test.js
